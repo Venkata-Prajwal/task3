@@ -1,0 +1,72 @@
+Task 3
+
+For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+let person = [
+    {
+        first_name: "Venkata",
+        last_name: "Prajwal",
+        phone: "9206801822"
+    },
+    {
+        first_name: "Venkata",
+        last_name: "Pranay",
+        phone: "903-3414-1221" 
+    }
+];
+
+
+//For
+for(let i = 0; i < person.length; i++) {
+    let obj = person[i];
+    console.log(obj)
+}
+
+//For in
+for (let jsonObj in person) {
+    console.log(person[jsonObj]);
+}
+
+//For of
+for (let obj of Object.keys(person)) {
+    console.log(person[obj])
+}
+
+//Foreach
+person.forEach(element => {
+    console.log(element)
+});
+
+
+Create your own resume data in JSON format
+
+const resume = [{
+    basics: {
+      name: "Venkata Prajwal",
+      email: "prajwalmv2017@gmail.com",
+      phone: "9206801822",
+      degree: "B.Tech ",
+      website: "Venkata Prajwal.com",
+      summary: "I'm a Full Stack Developer, I created web/mobile applications",
+      location: {
+        "address": "Varadarajswamy layout,singapura",
+        "city": "Bengaluru",
+        "countryCode": "560097",
+      },
+    },
+    
+    work:
+      {
+        company: "ABC company",
+        position: "Full Stack Developer",
+        website: "abccompany.com",
+        experience: "2 Years"
+      },
+
+    skills:
+        {
+          listOfSkills: "HTML, CSS, JS, React.js, Mongo DB, Responsive Web Design"
+        },
+}]
+
+
